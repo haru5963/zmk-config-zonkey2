@@ -252,7 +252,7 @@
             bindings = <
 &kp ESCAPE  &none   &kp LG(UP_ARROW)    &kp PAGE_UP       &kp LC(LEFT_ARROW)                                &none               &none             &kp UP_ARROW    &none            &none
 &kp TAB     &none   &kp LG(DOWN_ARROW)  &kp PAGE_DOWN     &kp LC(RIGHT_ARROW)  &trans                &none  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_ARROW)
-&trans      &none   &none               &none             &none                &none                 &none  &kp LG(UP_ARROW)    &kp LG(UP_ARROW)  &none           &none            &none
+&trans      &none   &none               &none             &none                &none                 &none  &kp LC(UP_ARROW)    &kp LC(UP_ARROW)  &none           &none            &none
 &trans      &trans  &trans              &lt 3 INT_HENKAN  &lt 2 SPACE          &lt 1 INT_MUHENKAN           &kp DELETE          &trans                                                                  &none
             >;
 
