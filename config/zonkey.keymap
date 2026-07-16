@@ -233,10 +233,10 @@
             // | CTRL| WIN | ALT |HENKAN|SPACE|MUHENKAN|         | BS | ENT |                   | DEL |
 
             bindings = <
-&kp F1   &kp F2     &kp F3     &kp F4            &kp F5                                    &kp F6         &kp F7     &kp F8    &kp F9    &kp F10
-&kp TAB  &kp LG(S)  &kp F3     &kp LG(F)         &kp LG(G)    &trans                &none  &kp LC(F6)     &mkp MB1   &mkp MB2  &mkp MB4  &kp F11
-&trans   &kp LG(Z)  &kp LG(X)  &kp LG(C)         &kp LG(V)    &kp LG(B)             &none  &none          &none      &none     &none     &kp F12
-&trans   &trans     &trans     &lt 3 INT_HENKAN  &lt 2 SPACE  &lt 1 INT_MUHENKAN           &kp BACKSPACE  &kp ENTER                               &kp LS(RIGHT_CONTROL)
+&kp F1   &kp F2     &kp F3            &kp F4            &kp F5                                    &kp F6         &kp F7     &kp F8    &kp F9    &kp F10
+&kp TAB  &kp LG(S)  &kp LC(UP_ARROW)  &kp LG(F)         &kp LG(G)    &trans                &none  &kp LC(F6)     &mkp MB1   &mkp MB2  &mkp MB4  &kp F11
+&trans   &kp LG(Z)  &kp LG(X)         &kp LG(C)         &kp LG(V)    &kp LG(B)             &none  &none          &none      &none     &none     &kp F12
+&trans   &trans     &trans            &lt 3 INT_HENKAN  &lt 2 SPACE  &lt 1 INT_MUHENKAN           &kp BACKSPACE  &kp ENTER                               &kp LS(RIGHT_CONTROL)
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -250,10 +250,10 @@
             // | CTRL| WIN | ALT |HENKAN|SPACE|MUHENKAN|         | BS | ENT |                   | DEL |
 
             bindings = <
-&kp ESCAPE  &none   &kp LC(HOME)  &kp PAGE_UP       &kp LC(LG(LEFT_ARROW))                                     &kp INSERT   &none           &kp UP_ARROW    &none            &none
-&kp TAB     &none   &kp LC(END)   &kp PAGE_DOWN     &kp LC(LG(RIGHT_ARROW))  &trans                     &none  &kp HOME     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&trans      &none   &none         &none             &kp LS(LG(LEFT_ARROW))   &kp LS(LG(RIGHT_ARROW))    &none  &kp LG(TAB)  &kp LG(TAB)     &none           &none            &none
-&trans      &trans  &trans        &lt 3 INT_HENKAN  &lt 2 SPACE              &lt 1 INT_MUHENKAN                &kp DELETE   &trans                                                    &none
+&kp ESCAPE  &none   &kp LG(UP_ARROW)    &kp PAGE_UP       &kp LG(LEFT_ARROW)                                &none             &none             &kp UP_ARROW    &none            &none
+&kp TAB     &none   &kp LG(DOWN_ARROW)  &kp PAGE_DOWN     &kp LG(RIGHT_ARROW)  &trans                &none  &none             &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&trans      &none   &none               &none             &none                &none                 &none  &kp LG(UP_ARROW)  &kp LG(UP_ARROW)  &none           &none            &none
+&trans      &trans  &trans              &lt 3 INT_HENKAN  &lt 2 SPACE          &lt 1 INT_MUHENKAN           &kp DELETE        &trans                                                    &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
